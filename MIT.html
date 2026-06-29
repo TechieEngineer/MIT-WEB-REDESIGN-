@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" class="cr"
+        xmlns:xlink="http://www.w3.org/1999/xlink" />
+    <link rel="shortcut icon" href="//apply-mit-edu.cdn.technolutions.net/favicon.ico" />
+    <link href="//fw.cdn.technolutions.net/framework/base.css?v=f315" rel="stylesheet" />
+    <link href="//slate-technolutions-net.cdn.technolutions.net/shared/base.css?v=TS-f315-639124661479918829"
+        rel="stylesheet" />
+    <link href="//apply-mit-edu.cdn.technolutions.net/shared/build-fonts.css?v=20210728180023" rel="stylesheet" />
+    <link href="//apply-mit-edu.cdn.technolutions.net/shared/build-mobile-global.css" rel="stylesheet" />
+    <link href="//apply-mit-edu.cdn.technolutions.net/shared/build.css?v=20260312154844" rel="stylesheet" />
+    <script src="//fw.cdn.technolutions.net/framework/base.js?v=f315"></script>
+    <script>/*<![CDATA[*/FW.Config['firstDay'] = 0; FW.Config['Citizenship.Default.Country'] = 'US'; FW.Config['Citizenship.PR'] = 'Permanent Resident'; FW.Config['CDN'] = '//slate-technolutions-net.cdn.technolutions.net'; /*]]>*/</script>
+    <script src="/shared/build-mobile-global.js"></script>
+    <script src="/apply/base.js?v=TS-f315-638802349907547728"></script>
+    <script async="async" id="session_expires"
+        src="//slate-technolutions-net.cdn.technolutions.net/shared/session.js?v=TS-f315-639054849024699881"
+        data-now="1780299503" data-realm="" data-service-extend="/account/login?cmd=session_extend"
+        data-service-login="/account/login?cmd=session_login"
+        data-service-check="/account/login?cmd=session_check&amp;noauth=1" data-expires="0"></script>
+
+
+    <style>
+        /*<![CDATA[*/
+        html>body {
+            line-height: normal;
+        }
+
+
+        ul.cr,
+        li.cr {
+            margin: 0;
+            padding: 0;
+        }
+
+        #content {
+            clear: both;
+            padding: 15px;
+        }
+
+        #global {
+            float: right;
+        }
+
+        #global ul,
+        #global li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* MY CSS #HARISH */
+
+        /* body {
+            background-color: red;
+        } */
+
+
+        .responsive-table {
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* .login-options {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            width: 100%;
+            max-width: 700px;
+            margin: 0 auto;
+        } */
+        /* .login-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        } */
+
+        .login-options {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            align-items: stretch;
+        }
+
+        @media(max-width:768px) {
+            .login-options {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* .option {
+            flex: 1;
+        } */
+        /* .option {
+            flex: 1;
+            padding: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            background: #fff;
+        } */
+        .option {
+            display: flex;
+            flex-direction: column;
+
+            padding: 1.5rem;
+
+            border: 1px solid #d9d9d9;
+            border-radius: 12px;
+
+            min-height: 180px;
+
+            background: #fff;
+        }
+
+        @media (max-width:768px) {
+            .option {
+                width: 100%;
+            }
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .login-options {
+                flex-direction: column;
+            }
+        }
+
+        /* .page-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        } */
+        .page-container {
+            width: min(90%, 1200px);
+            margin: auto;
+            padding-inline: 1rem;
+        }
+
+        /* svg {
+            max-width: 100%;
+            height: auto;
+        } */
+
+
+        @media (max-width: 768px) {
+            .c_site-nav__links {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .c_site-nav__link-item {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img,
+        svg {
+            max-width: 100%;
+            height: auto;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        /* .c_site-nav__link,
+.c_site-nav__more-link {
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    white-space: nowrap;
+    transition: font-size 0.3s ease;
+} */
+
+        .c_site-nav__link,
+        .c_site-nav__more-link {
+            white-space: normal;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+        }
+
+        h2 {
+            font-size: clamp(1.1rem, 2vw, 1.8rem);
+        }
+
+        .c_site-footer__nav-mod,
+        .c_site-footer__utility-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        @media(max-width:768px) {
+
+            .c_site-footer__nav-mod,
+            .c_site-footer__utility-list {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+
+        /* a,
+        button {
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        } */
+        .option a,
+        .option button {
+            min-height: 44px;
+        }
+
+        .c_site-nav__width {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            flex-wrap: nowrap;
+        }
+
+        .c_site-nav__logo-link {
+            flex-shrink: 1;
+            min-width: 0;
+        }
+
+        .c_mit-logo {
+            width: clamp(120px, 30vw, 180px);
+            height: auto;
+        }
+
+        @media (max-width: 400px) {
+            .c_mit-logo {
+                width: 110px;
+            }
+        }
+
+        .login-btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 12px 24px;
+
+            /* background: #a31f34; */
+            background: rgb(117 0 20);
+            color: white;
+            text-decoration: none;
+
+            border-radius: 6px;
+
+            margin: 1rem 0;
+            font-weight: 600;
+        }
+
+        .login-btn:hover {
+            background: #8b1a2d;
+        }
+
+        html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.c_primary-container {
+    flex: 1;
+}
+
+
+        /*]]>*/
+    </style>
+
+
+    <title>Application Management - Graduate Admissions</title>
+</head>
+
+<body><noscript>
+        <div
+            style="background: #ffffcc; border-bottom: 2px solid #cccc99; padding: 5px 10px; margin-bottom: 0; text-align: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999;">
+            This website uses scripting to enhance your browsing experience. <a
+                href="https://support.google.com/answer/23852">Enable JavaScript</a> in your browser and then reload
+            this website.</div>
+    </noscript>
+    <div id="netblock"
+        style="background: #ffffcc; border-bottom: 2px solid #cccc99; display: none; padding: 5px 10px; margin-bottom: 0; text-align: center; position: fixed; top: 0; left: 0; right: 0; z-index: 9999;">
+        This website uses resources that are being blocked by your network. Contact your network administrator for more
+        information.</div>
+    <script>/*<![CDATA[*/if (window['FW'] == null) document.getElementById('netblock').style['display'] = 'block';/*]]>*/</script>
+    <div id="page">
+        <div class="c_front c_homepage c_spotlight cr" xmlns:xlink="http://www.w3.org/1999/xlink"><a target="_blank"
+                href="https://web.mit.edu/#main" class="c_skip-to-content cr">Skip to content &#x2193;</a>
+            <div id="c_notification" class="cr"></div>
+            <nav class="c_site-nav c_js-site-nav cr">
+                <div class="c_site-nav__width cr"><a target="_blank" class="c_site-nav__logo-link cr"
+                        href="https://web.mit.edu/"><svg class="c_mit-logo cr" version="1.1" id="c_Layer_1" x="0px"
+                            y="0px" width="180.619px" height="42.725px" viewbox="0 0 180.619 42.725"
+                            enable-background="new 0 0 180.619 42.725" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <g class="cr">
+                                <g class="c_mit-logo--logo cr">
+                                    <rect class="c_logo-color--primary cr" x="52" y="1.783" width="20" height="8" />
+                                    <rect class="c_logo-color--primary cr" x="13" y="1.783" width="8" height="26" />
+                                    <rect class="c_logo-color--primary cr" x="26" y="1.783" width="8" height="38" />
+                                    <rect class="c_logo-color--primary cr" y="1.783" width="8" height="38" />
+                                    <rect class="c_logo-color--primary cr" x="52" y="14.783" width="8" height="25" />
+                                    <rect class="c_logo-color--primary cr" x="39" y="1.783" width="8" height="8" />
+                                    <rect class="c_logo-color--secondary cr" x="39" y="14.783" width="8" height="25" />
+                                </g>
+                                <g class="c_mit-logo--full-name cr">
+                                    <path class="c_logo-color--primary cr"
+                                        d="M89.032,1.802h3.262l1.574,6.611h0.025l1.624-6.611h3.225V10.7h-2.1V3.789h-0.025L94.855,10.7h-1.962 l-1.812-6.911h-0.025V10.7h-2.024V1.802z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M106.043,9.312c0,0.462,0.013,0.975,0.175,1.387h-1.8c-0.074-0.225-0.111-0.462-0.125-0.688h-0.024 c-0.325,0.525-1.3,0.862-1.999,0.862c-1.275,0-2.225-0.7-2.225-1.975c0-1.6,1.287-2.162,3.411-2.461l0.712-0.1v-0.55 c0-0.5-0.399-0.712-0.924-0.712c-0.625,0-0.926,0.225-1.025,0.887h-1.875c0.062-1.912,1.838-2.087,2.737-2.087 c1.812,0,2.95,0.425,2.962,1.924V9.312z M104.168,7.463l-1.312,0.375c-0.487,0.138-0.938,0.325-0.938,0.862 c0,0.525,0.438,0.75,0.913,0.75c0.762,0,1.336-0.513,1.336-1.525V7.463z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M112.155,6.013c-0.388-0.462-1.225-0.712-1.837-0.712c-0.487,0-0.838,0.175-0.838,0.512 c0,1.137,3.938,0.2,3.938,2.687c0,1.75-1.55,2.374-3,2.374c-1.449,0-2.273-0.412-3.248-1.312l1.211-1.05 c0.601,0.575,1.213,0.938,2.1,0.938c0.325,0,1.062-0.075,1.062-0.675c0-1.038-3.937-0.213-3.937-2.575 c0-1.674,1.462-2.324,2.812-2.324c1.025,0,2.037,0.362,2.938,0.962L112.155,6.013z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M119.105,6.013c-0.387-0.462-1.225-0.712-1.837-0.712c-0.487,0-0.837,0.175-0.837,0.512 c0,1.137,3.936,0.2,3.936,2.687c0,1.75-1.549,2.374-2.998,2.374c-1.45,0-2.275-0.412-3.25-1.312l1.213-1.05 c0.6,0.575,1.212,0.938,2.1,0.938c0.324,0,1.062-0.075,1.062-0.675c0-1.038-3.937-0.213-3.937-2.575 c0-1.674,1.463-2.324,2.812-2.324c1.024,0,2.037,0.362,2.936,0.962L119.105,6.013z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M127.355,9.312c0,0.462,0.013,0.975,0.175,1.387h-1.8c-0.074-0.225-0.111-0.462-0.125-0.688h-0.024 c-0.325,0.525-1.3,0.862-1.999,0.862c-1.275,0-2.225-0.7-2.225-1.975c0-1.6,1.287-2.162,3.411-2.461l0.712-0.1v-0.55 c0-0.5-0.399-0.712-0.924-0.712c-0.625,0-0.926,0.225-1.025,0.887h-1.875c0.062-1.912,1.838-2.087,2.737-2.087 c1.812,0,2.95,0.425,2.962,1.924V9.312z M125.48,7.463l-1.312,0.375c-0.487,0.138-0.938,0.325-0.938,0.862 c0,0.525,0.438,0.75,0.913,0.75c0.762,0,1.336-0.513,1.336-1.525V7.463z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M133.468,6.288c-0.35-0.75-0.95-0.912-1.249-0.912c-1.113,0-1.513,0.862-1.513,2s0.476,2,1.513,2 c0.6,0,1.074-0.225,1.387-0.975l1.399,0.712c-0.6,1.062-1.687,1.762-2.962,1.762c-1.986,0-3.361-1.262-3.361-3.499 c0-2.199,1.462-3.499,3.299-3.499c1.263,0,2.35,0.462,2.987,1.625L133.468,6.288z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M136.107,1.802h1.949v2.875h0.024c0.375-0.513,1.212-0.8,1.825-0.8c1.399,0,2.086,0.812,2.086,2.149V10.7 h-1.949V6.713c0-1.025-0.55-1.262-0.975-1.262c-0.449,0-1.012,0.287-1.012,1.524V10.7h-1.949V1.802z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M149.63,10.7h-1.949v-0.587c-0.5,0.587-1.325,0.762-1.925,0.762c-1.574,0-2.012-0.912-2.012-1.912V4.051 h1.949V8.4c0,0.587,0.213,0.9,0.949,0.9c0.562,0,1.038-0.312,1.038-1.038V4.051h1.949V10.7z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M155.692,6.013c-0.388-0.462-1.225-0.712-1.837-0.712c-0.487,0-0.838,0.175-0.838,0.512 c0,1.137,3.938,0.2,3.938,2.687c0,1.75-1.55,2.374-3,2.374c-1.449,0-2.273-0.412-3.248-1.312l1.211-1.05 c0.601,0.575,1.213,0.938,2.1,0.938c0.325,0,1.062-0.075,1.062-0.675c0-1.038-3.937-0.213-3.937-2.575 c0-1.674,1.462-2.324,2.812-2.324c1.025,0,2.037,0.362,2.938,0.962L155.692,6.013z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M159.807,7.775c0.012,1.275,0.824,1.675,1.449,1.675c0.725,0,1.062-0.375,1.625-1.175l1.461,0.762 c-0.674,1.25-1.736,1.837-3.224,1.837c-2.062,0-3.262-1.424-3.262-3.299c0-2.35,1.237-3.699,3.262-3.699 c2.425,0,3.249,1.85,3.262,3.899H159.807z M162.43,6.576c-0.062-0.975-0.762-1.274-1.324-1.274s-1.236,0.399-1.324,1.274H162.43z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M169.03,5.376h-1.163v3.262c0,0.525,0.264,0.663,0.613,0.663c0.213,0,0.487-0.025,0.588-0.038V10.8 c-0.25,0.025-0.826,0.075-1.25,0.075c-1.662,0-1.9-1.037-1.9-2V5.376h-0.949v-1.2h0.949V2.252h1.949v1.924h1.163V5.376z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M173.43,5.376h-1.162v3.262c0,0.525,0.263,0.663,0.613,0.663c0.212,0,0.486-0.025,0.586-0.038V10.8 c-0.249,0.025-0.824,0.075-1.249,0.075c-1.662,0-1.899-1.037-1.899-2V5.376h-0.949v-1.2h0.949V2.252h1.949v1.924h1.162V5.376z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M178.854,6.013c-0.388-0.462-1.225-0.712-1.837-0.712c-0.487,0-0.838,0.175-0.838,0.512 c0,1.137,3.938,0.2,3.938,2.687c0,1.75-1.55,2.374-3,2.374c-1.449,0-2.273-0.412-3.248-1.312l1.211-1.05 c0.601,0.575,1.213,0.938,2.1,0.938c0.325,0,1.062-0.075,1.062-0.675c0-1.038-3.937-0.213-3.937-2.575 c0-1.674,1.462-2.324,2.812-2.324c1.025,0,2.037,0.362,2.938,0.962L178.854,6.013z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M89.082,16.352h2.225v8.898h-2.225V16.352z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M93.044,18.601h1.95v0.587c0.5-0.587,1.324-0.762,1.924-0.762c1.574,0,2.012,0.912,2.012,1.912v4.912 H96.98v-4.162c0-0.65-0.199-1.087-0.949-1.087c-0.787,0-1.037,0.512-1.037,1.112v4.137h-1.95V18.601z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M104.992,20.563c-0.387-0.462-1.225-0.712-1.836-0.712c-0.488,0-0.838,0.175-0.838,0.512 c0,1.137,3.937,0.2,3.937,2.688c0,1.749-1.55,2.373-2.999,2.373s-2.274-0.412-3.25-1.312l1.213-1.05 c0.6,0.574,1.213,0.938,2.1,0.938c0.324,0,1.062-0.075,1.062-0.675c0-1.038-3.938-0.213-3.938-2.575 c0-1.674,1.463-2.324,2.812-2.324c1.025,0,2.037,0.362,2.937,0.962L104.992,20.563z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M110.918,19.926h-1.162v3.262c0,0.525,0.263,0.662,0.613,0.662c0.212,0,0.486-0.025,0.586-0.037v1.537 c-0.249,0.025-0.824,0.074-1.249,0.074c-1.662,0-1.899-1.037-1.899-1.999v-3.499h-0.949v-1.2h0.949v-1.924h1.949v1.924h1.162 V19.926z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M112.031,17.851v-1.5h1.949v1.5H112.031z M113.98,18.601v6.649h-1.949v-6.649H113.98z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M119.018,19.926h-1.162v3.262c0,0.525,0.263,0.662,0.613,0.662c0.212,0,0.486-0.025,0.586-0.037v1.537 c-0.249,0.025-0.824,0.074-1.249,0.074c-1.662,0-1.899-1.037-1.899-1.999v-3.499h-0.949v-1.2h0.949v-1.924h1.949v1.924h1.162 V19.926z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M126.018,25.25h-1.949v-0.588c-0.5,0.588-1.325,0.762-1.926,0.762c-1.574,0-2.012-0.912-2.012-1.912 v-4.911h1.949v4.349c0,0.587,0.213,0.899,0.95,0.899c0.562,0,1.038-0.312,1.038-1.037v-4.211h1.949V25.25z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M131.055,19.926h-1.162v3.262c0,0.525,0.263,0.662,0.613,0.662c0.212,0,0.486-0.025,0.586-0.037v1.537 c-0.249,0.025-0.824,0.074-1.249,0.074c-1.662,0-1.899-1.037-1.899-1.999v-3.499h-0.949v-1.2h0.949v-1.924h1.949v1.924h1.162 V19.926z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M133.643,22.325C133.655,23.6,134.468,24,135.092,24c0.726,0,1.062-0.375,1.625-1.175l1.463,0.763 c-0.676,1.249-1.737,1.836-3.225,1.836c-2.062,0-3.262-1.424-3.262-3.299c0-2.349,1.237-3.699,3.262-3.699 c2.424,0,3.249,1.85,3.262,3.899H133.643z M136.268,21.125c-0.062-0.975-0.763-1.274-1.325-1.274 c-0.562,0-1.237,0.399-1.325,1.274H136.268z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M149.654,21.925c0,2.237-1.463,3.499-3.537,3.499s-3.537-1.262-3.537-3.499s1.463-3.499,3.537-3.499 S149.654,19.688,149.654,21.925z M144.53,21.925c0,1.137,0.475,2,1.587,2s1.587-0.862,1.587-2.075 c0-1.062-0.475-1.924-1.587-1.924S144.53,20.788,144.53,21.925z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M151.18,19.926h-1.023v-1.2h1.023v-0.65c0-0.75,0.238-1.825,1.9-1.825c0.425,0,1.024,0.062,1.274,0.15 v1.424h-0.55c-0.338,0-0.675,0.1-0.675,0.475v0.425h1.2v1.2h-1.2v5.324h-1.95V19.926z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M86.77,30.902h6.874v1.725h-2.325V39.8h-2.224v-7.173H86.77V30.902z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M95.219,36.875c0.013,1.275,0.825,1.676,1.449,1.676c0.726,0,1.062-0.375,1.625-1.176l1.463,0.763 c-0.676,1.249-1.737,1.837-3.225,1.837c-2.062,0-3.262-1.424-3.262-3.299c0-2.35,1.237-3.699,3.262-3.699 c2.424,0,3.249,1.85,3.262,3.898H95.219z M97.844,35.676c-0.062-0.975-0.763-1.275-1.325-1.275c-0.562,0-1.237,0.4-1.325,1.275 H97.844z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M105.468,35.389c-0.35-0.75-0.95-0.912-1.249-0.912c-1.113,0-1.513,0.861-1.513,1.999 s0.476,1.999,1.513,1.999c0.6,0,1.074-0.225,1.387-0.975l1.399,0.713c-0.6,1.062-1.687,1.762-2.962,1.762 c-1.986,0-3.361-1.262-3.361-3.499c0-2.199,1.462-3.499,3.299-3.499c1.263,0,2.35,0.463,2.987,1.625L105.468,35.389z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M108.107,30.902h1.949v2.874h0.024c0.375-0.513,1.212-0.8,1.825-0.8c1.399,0,2.086,0.812,2.086,2.149V39.8 h-1.949v-3.986c0-1.024-0.55-1.263-0.975-1.263c-0.449,0-1.012,0.287-1.012,1.525V39.8h-1.949V30.902z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M115.744,33.151h1.949v0.587c0.5-0.587,1.324-0.762,1.925-0.762c1.574,0,2.012,0.912,2.012,1.912V39.8 h-1.949v-4.161c0-0.65-0.2-1.088-0.95-1.088c-0.787,0-1.037,0.513-1.037,1.112V39.8h-1.949V33.151z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M129.979,36.476c0,2.237-1.462,3.499-3.536,3.499c-2.075,0-3.537-1.262-3.537-3.499 s1.462-3.499,3.537-3.499C128.518,32.977,129.979,34.238,129.979,36.476z M124.855,36.476c0,1.138,0.475,1.999,1.588,1.999 c1.111,0,1.586-0.861,1.586-2.074c0-1.062-0.475-1.924-1.586-1.924C125.33,34.477,124.855,35.338,124.855,36.476z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M131.256,39.8v-8.897h1.949V39.8H131.256z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M141.555,36.476c0,2.237-1.463,3.499-3.537,3.499s-3.537-1.262-3.537-3.499s1.463-3.499,3.537-3.499 S141.555,34.238,141.555,36.476z M136.431,36.476c0,1.138,0.475,1.999,1.587,1.999s1.587-0.861,1.587-2.074 c0-1.062-0.475-1.924-1.587-1.924S136.431,35.338,136.431,36.476z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M148.667,33.151v6.661c0,2.111-2.162,2.188-3.187,2.188c-2,0-3.049-0.676-3.062-2.301h2.025 c0.012,0.726,0.424,1.025,1.125,1.025c0.749,0,1.211-0.15,1.211-1.125v-0.762c-0.424,0.412-1.249,0.549-1.836,0.549 c-1.863,0-2.588-1.499-2.588-3.174c0-1.625,0.85-3.236,2.612-3.236c0.726,0,1.35,0.162,1.899,0.699v-0.524H148.667z M145.53,34.4 c-0.612,0-1.225,0.351-1.225,1.787c0,0.801,0.175,1.775,1.2,1.775c1.249,0,1.287-1.088,1.287-1.775 C146.793,34.838,146.13,34.4,145.53,34.4z" />
+                                    <path class="c_logo-color--primary cr"
+                                        d="M150.105,40.475c0.225,0.013,0.45,0.025,0.662,0.025c0.588,0,0.9-0.113,0.9-0.488 c0-0.1-0.013-0.212-0.176-0.712l-1.949-6.148h2.05l1.075,5.073h0.024l1.087-5.073h2.112l-2.337,7.086 C153.217,41.25,152.793,42,151.643,42h-1.537V40.475z" />
+                                </g>
+                            </g>
+                        </svg></a>
+                    <h1 class="c_visually-hidden cr"><a target="_blank" class="c_site-nav__logo-link cr"
+                            href="https://web.mit.edu/">Massachusetts Institute of Technology</a></h1>
+                    <ul class="c_site-nav__links cr">
+                        <li class="c_site-nav__link-item c_menu-item--collapsed cr"><a target="_blank"
+                                href="https://web.mit.edu/education"
+                                class="&#xD;&#xA;                        c_site-nav__link&#xD;&#xA;                        c_js-nav-item&#xD;&#xA;                        c_menu-item--collapsed&#xD;&#xA;                        cr&#xD;&#xA;                      "
+                                data-drupal-link-system-path="node/11">Education</a></li>
+                        <li class="c_site-nav__link-item c_menu-item--collapsed cr"><a target="_blank"
+                                href="https://web.mit.edu/research"
+                                class="&#xD;&#xA;                        c_site-nav__link&#xD;&#xA;                        c_js-nav-item&#xD;&#xA;                        c_menu-item--collapsed&#xD;&#xA;                        cr&#xD;&#xA;                      "
+                                data-drupal-link-system-path="node/12">Research</a></li>
+                        <li class="c_site-nav__link-item cr"><a target="_blank" href="https://web.mit.edu/innovation"
+                                class="c_site-nav__link c_js-nav-item cr"
+                                data-drupal-link-system-path="node/13">Innovation</a></li>
+                        <li class="c_site-nav__link-item cr"><a target="_blank"
+                                href="https://web.mit.edu/admissions-aid" class="c_site-nav__link c_js-nav-item cr"
+                                data-drupal-link-system-path="node/14">Admissions + Aid</a></li>
+                        <li class="c_site-nav__link-item cr"><a target="_blank" href="https://web.mit.edu/campus-life"
+                                class="c_site-nav__link c_js-nav-item cr" data-drupal-link-system-path="node/15">Campus
+                                Life</a></li>
+                        <li class="c_site-nav__link-item cr"><a target="_blank" href="http://news.mit.edu/"
+                                class="c_site-nav__link c_js-nav-item cr">News<span class="c_tool-tip cr"
+                                    style="left: 1227px; top: 43px;">news.mit.edu</span></a></li>
+                        <li class="c_site-nav__link-item cr"><a target="_blank" href="https://web.mit.edu/alumni"
+                                class="c_site-nav__link c_js-nav-item cr"
+                                data-drupal-link-system-path="node/17">Alumni</a></li>
+                        <li class="c_site-nav__link-item cr"><a target="_blank" href="https://web.mit.edu/about"
+                                class="c_site-nav__link c_js-nav-item cr" data-drupal-link-system-path="node/16">About
+                                MIT</a></li>
+                        <li class="c_site-nav__link-item c_site-nav__link-item--more cr"><button
+                                class="c_site-nav__link cr">
+                                More <span class="c_site-nav__arrow cr">&#x2193;</span></button>
+                            <ul class="c_site-nav__more-list c_js-nav-more cr">
+                                <li class="c_site-nav__more-link-item cr"><a target="_blank"
+                                        href="https://web.mit.edu/admissions-aid" class="c_site-nav__more-link cr"
+                                        data-drupal-link-system-path="node/14">Admissions + Aid</a></li>
+                                <li class="c_site-nav__more-link-item cr"><a target="_blank"
+                                        href="https://web.mit.edu/campus-life" class="c_site-nav__more-link cr"
+                                        data-drupal-link-system-path="node/15">Campus Life</a></li>
+                                <li class="c_site-nav__more-link-item cr"><a target="_blank" href="http://news.mit.edu/"
+                                        class="c_site-nav__more-link cr">News</a></li>
+                                <li class="c_site-nav__more-link-item cr"><a target="_blank"
+                                        href="https://web.mit.edu/alumni" class="c_site-nav__more-link cr"
+                                        data-drupal-link-system-path="node/17">Alumni</a></li>
+                                <li class="c_site-nav__more-link-item cr"><a target="_blank"
+                                        href="https://web.mit.edu/about" class="c_site-nav__more-link cr"
+                                        data-drupal-link-system-path="node/16">About MIT</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div data-drupal-messages-fallback="" class="c_hidden cr"></div>
+            <main class="c_primary-container cr">
+                <!-- <div style="width: 90%; margin: auto;" class="cr"> -->
+                <div class="page-container">
+                    <div id="global">
+                        <ul></ul>
+                    </div>
+                    <div id="content">
+                        <h1>Application Management - Graduate Admissions</h1>
+
+
+                        <!-- <table class="fixed" role="none" style="width: 700px;"> -->
+                        <!-- <table class="fixed responsive-table" role="none">
+
+                            <colgroup>
+                                <col style="width: 50%;" />
+                                <col style="width: 50%;" />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <h2>Returning users:</h2><b><a
+                                                href="/account/login?r=https%3a%2f%2fapply.mit.edu%2fapply%2f">Log
+                                                in</a><span> to continue an application.</span></b>
+                                    </td>
+                                    <td>
+                                        <h2>First-time users:</h2><b><a
+                                                href="/account/register?r=https%3a%2f%2fapply.mit.edu%2fapply%2f"><span>Create
+                                                    an account</span></a><span> to start a new application.</span></b>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+
+
+                        <div class="login-options">
+                            <!-- <div class="option">
+                                <h2>Returning users:</h2>
+                                <b>
+                                    <a href="/account/login">Log in</a>
+                                    to continue an application.
+                                </b>
+                            </div> -->
+
+                            <div class="option">
+                                <h2>Returning users</h2>
+
+                                <a class="login-btn" href="/account/login">
+                                    Log in
+                                </a>
+
+                                <p>Continue an existing application.</p>
+                            </div>
+
+                            <!-- <div class="option">
+
+                                
+                                <h2>First-time users:</h2>
+                                <b>
+                                    <a href="/account/register">Create an account</a>
+                                    to start a new application.
+                                </b>
+                            </div> -->
+
+                            <div class="option">
+                                <h2>First-time users</h2>
+
+                                <a class="login-btn" href="/account/register">
+                                    Create Account
+                                </a>
+
+                                <p>Start a new application.</p>
+                            </div>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            </main>
+            <footer class="c_site-footer cr"><a target="_blank" href="https://web.mit.edu/"
+                    class="c_site-footer__logo-link cr"><svg width="85" aria-hidden="true" viewbox="0 0 73 39"
+                        version="1.1" class="c_mit-logo c_site-footer__logo cr" xmlns="http://www.w3.org/2000/svg">
+                        <polygon class="c_logo-color--primary cr"
+                            points="52.785 8.063 72.785 8.063 72.785 0.063 52.785 0.063" />
+                        <polygon class="c_logo-color--primary cr"
+                            points="13.785 26.063 21.785 26.063 21.785 0.063 13.785 0.063" />
+                        <polygon class="c_logo-color--primary cr"
+                            points="26.785 38.063 34.785 38.063 34.785 0.063 26.785 0.063" />
+                        <polygon class="c_logo-color--primary cr"
+                            points="0.785 38.063 8.785 38.063 8.785 0.063 0.785 0.063" />
+                        <polygon class="c_logo-color--primary cr"
+                            points="52.785 38.063 60.785 38.063 60.785 13.063 52.785 13.063" />
+                        <polygon class="c_logo-color--primary cr"
+                            points="39.785 8.063 47.785 8.063 47.785 0.063 39.785 0.063" />
+                        <polygon class="c_logo-color--secondary cr" points="40 38 48 38 48 13 40 13" />
+                    </svg><span class="c_visually-hidden cr">Massachusetts Institute of Technology</span></a>
+                <ul class="c_site-footer__nav-mod cr">
+                    <li class="c_site-footer__nav__link-item cr"><a target="_blank"
+                            class="c_site-footer__nav__link c_js-nav-item cr"
+                            href="https://web.mit.edu/education">Education</a></li>
+                    <li class="c_site-footer__nav__link-item cr"><a target="_blank"
+                            class="c_site-footer__nav__link c_js-nav-item cr"
+                            href="https://web.mit.edu/research">Research</a></li>
+                    <li class="c_site-footer__nav__link-item cr"><a target="_blank"
+                            class="c_site-footer__nav__link c_js-nav-item cr"
+                            href="https://web.mit.edu/innovation">Innovation</a></li>
+                    <li class="c_site-footer__nav__link-item cr"><a target="_blank"
+                            class="c_site-footer__nav__link c_js-nav-item cr"
+                            href="https://web.mit.edu/admissions-aid">Admissions + Aid</a></li>
+                    <li class="c_site-footer__nav__link-item cr"><a target="_blank"
+                            class="c_site-footer__nav__link c_js-nav-item cr"
+                            href="https://web.mit.edu/campus-life">Campus Life</a></li>
+                    <li class="c_site-footer__nav__link-item cr"><a target="_blank"
+                            class="c_site-footer__nav__link c_js-nav-item cr" href="http://news.mit.edu/">News<span
+                                class="c_tool-tip cr">news.mit.edu</span></a></li>
+                    <li class="c_site-footer__nav__link-item cr"><a target="_blank"
+                            class="c_site-footer__nav__link c_js-nav-item cr" href="https://web.mit.edu/about">About
+                            MIT</a></li>
+                    <li class="c_site-footer__nav__link-item cr"><a target="_blank"
+                            class="c_site-footer__nav__link c_js-nav-item cr"
+                            href="https://web.mit.edu/alumni">Alumni</a></li>
+                </ul>
+                <div class="c_site-footer__utility-mod cr">
+                    <p class="c_site-footer__name cr">
+                        Massachusetts Institute of Technology
+                    </p>
+                    <div class="c_site-footer__contact-info cr"><a target="_blank"
+                            href="https://www.google.com/maps/place/Massachusetts+Institute+of+Technology/@42.360091,-71.09416,15z/data=!4m5!3m4!1s0x0:0xd0e08ea5b308203c!8m2!3d42.360091!4d-71.09416"
+                            class="c_site-footer__contact-info-link cr">77 Massachusetts Avenue, Cambridge, MA, USA</a>
+                    </div>
+                    <ul class="c_site-footer__utility-list cr">
+                        <li class="c_site-footer__utility-item cr"><a target="_blank"
+                                class="c_site-footer__utility__text-link cr"
+                                href="https://web.mit.edu/visitmit">Visit</a></li>
+                        <li class="c_site-footer__utility-item cr"><a target="_blank"
+                                class="c_site-footer__utility__text-link cr" href="http://whereis.mit.edu/">Map</a></li>
+                        <li class="c_site-footer__utility-item cr"><a target="_blank"
+                                class="c_site-footer__utility__text-link cr" href="http://calendar.mit.edu/">Events</a>
+                        </li>
+                        <li class="c_site-footer__utility-item cr"><a target="_blank"
+                                class="c_site-footer__utility__text-link cr"
+                                href="https://web.mit.edu/search/?redirect-origin=legacy&amp;tab=directory">People</a>
+                        </li>
+                        <li class="c_site-footer__utility-item cr"><a target="_blank"
+                                class="c_site-footer__utility__text-link cr" href="http://careers.mit.edu/">Careers</a>
+                        </li>
+                        <li class="c_site-footer__utility-item cr"><a target="_blank"
+                                class="c_site-footer__utility__text-link cr"
+                                href="https://web.mit.edu/contact">Contact</a></li>
+                        <li
+                            class="&#xD;&#xA;                      c_site-footer__utility-item&#xD;&#xA;                      c_site-footer__utility-item--privacy&#xD;&#xA;                      cr&#xD;&#xA;                    ">
+                            <a target="_blank" class="c_site-footer__utility__text-link cr"
+                                href="https://web.mit.edu/privacy">Privacy</a>
+                        </li>
+                        <li class="c_site-footer__utility-item cr"><a target="_blank"
+                                class="c_site-footer__utility__text-link cr"
+                                href="https://web.mit.edu/accessibility">Accessibility</a></li>
+                        <li
+                            class="&#xD;&#xA;                      c_site-footer__utility-item&#xD;&#xA;                      c_site-footer__utility-item--social&#xD;&#xA;                      cr&#xD;&#xA;                    ">
+                            <ul class="c_site-footer__social-list cr">
+                                <li
+                                    class="&#xD;&#xA;                          c_site-footer__social-item&#xD;&#xA;                          c_site-footer__social-item--connect&#xD;&#xA;                          cr&#xD;&#xA;                        ">
+                                    <a target="_blank" href="http://socialmediahub.mit.edu/"
+                                        class="c_site-footer__social-item--connect-link cr"><span
+                                            class="c_site-footer__social-item--connect-text cr">Social Media
+                                            Hub</span></a>
+                                </li>
+                                <li
+                                    class="&#xD;&#xA;                          c_site-footer__social-item&#xD;&#xA;                          c_site-footer__social-item--facebook&#xD;&#xA;                          cr&#xD;&#xA;                        ">
+                                    <a target="_blank" href="https://www.facebook.com/MITnews" class="cr"><svg width="8"
+                                            height="16" viewbox="0 0 8 16" class="cr"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M5.32 16H1.773V7.999H0V5.242h1.773V3.587c0-2.249 1-3.587 3.844-3.587h2.367v2.758h-1.48c-1.107 0-1.18.385-1.18 1.104l-.005 1.38H8L7.686 8H5.32V16z"
+                                                fill="currentColor" fill-rule="nonzero" class="cr" />
+                                        </svg></a>
+                                </li>
+                                <li
+                                    class="&#xD;&#xA;                          c_site-footer__social-item&#xD;&#xA;                          c_site-footer__social-item--youtube&#xD;&#xA;                          cr&#xD;&#xA;                        ">
+                                    <a target="_blank" href="https://www.youtube.com/mit" class="cr"><svg
+                                            viewbox="0 0 24 17" height="16" width="23" class="cr"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M22.938 3.005A2.87 2.87 0 0 0 20.916.984C19.143.5 12.011.5 12.011.5S4.867.512 3.093.996a2.87 2.87 0 0 0-2.022 2.022C.6 4.79.6 8.5.6 8.5s0 3.709.484 5.495a2.87 2.87 0 0 0 2.021 2.021c1.774.484 8.906.484 8.906.484s7.132 0 8.905-.484a2.87 2.87 0 0 0 2.022-2.021c.484-1.774.484-5.495.484-5.495s0-3.709-.484-5.495zm-13.21 8.918V5.077l5.93 3.423-5.93 3.423z"
+                                                fill="currentColor" fill-rule="nonzero" class="cr" />
+                                        </svg></a>
+                                </li>
+                                <li
+                                    class="&#xD;&#xA;                          c_site-footer__social-item&#xD;&#xA;                          c_site-footer__social-item--instagram&#xD;&#xA;                          cr&#xD;&#xA;                        ">
+                                    <a target="_blank" href="https://www.instagram.com/mitpics/" class="cr"><svg
+                                            width="18" height="18" viewbox="0 0 16 16" class="cr"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <defs class="cr">
+                                                <path id="c_a" d="M0 .005h15.257V15.26H0z" class="cr" />
+                                            </defs>
+                                            <g fill="none" fill-rule="evenodd" class="cr">
+                                                <g transform="translate(.384 .529)" class="cr">
+                                                    <mask id="c_b" fill="#fff" class="cr">
+                                                        <use xlink:href="#a" class="cr" />
+                                                    </mask>
+                                                    <path
+                                                        d="M7.629.005c-2.072 0-2.332.009-3.146.046-.812.037-1.366.166-1.851.354a3.74 3.74 0 0 0-1.352.88A3.74 3.74 0 0 0 .4 2.636c-.188.486-.317 1.04-.354 1.852C.009 5.302 0 5.562 0 7.633c0 2.072.009 2.332.046 3.146.037.812.166 1.366.355 1.851.194.502.455.928.88 1.352.424.424.849.685 1.35.88.486.188 1.04.317 1.852.354.814.037 1.074.046 3.146.046 2.071 0 2.331-.009 3.145-.046.812-.037 1.366-.166 1.852-.354a3.74 3.74 0 0 0 1.35-.88 3.74 3.74 0 0 0 .88-1.352c.19-.485.318-1.04.355-1.851.037-.814.046-1.074.046-3.146 0-2.071-.009-2.331-.046-3.145-.037-.812-.166-1.366-.354-1.852a3.74 3.74 0 0 0-.88-1.35 3.74 3.74 0 0 0-1.351-.88c-.486-.19-1.04-.318-1.852-.355C9.96.014 9.7.005 7.629.005zm0 1.374c2.037 0 2.278.008 3.082.045.744.034 1.148.158 1.417.262.356.139.61.304.877.571.267.267.432.521.57.877.105.27.23.673.263 1.417.037.804.045 1.046.045 3.082 0 2.037-.008 2.279-.045 3.083-.034.744-.158 1.148-.262 1.417-.139.356-.304.61-.571.877a2.363 2.363 0 0 1-.877.57c-.269.105-.673.23-1.417.263-.804.037-1.045.045-3.082.045s-2.279-.008-3.083-.045c-.744-.034-1.148-.158-1.417-.263a2.363 2.363 0 0 1-.877-.57 2.364 2.364 0 0 1-.57-.877c-.105-.27-.23-.673-.263-1.417-.037-.804-.044-1.046-.044-3.083 0-2.036.007-2.278.044-3.082.034-.744.158-1.148.263-1.417.138-.356.303-.61.57-.877.267-.267.521-.432.877-.57.27-.105.673-.23 1.417-.263.804-.037 1.046-.045 3.083-.045z"
+                                                        fill="currentColor" mask="url(#b)" class="cr" />
+                                                </g>
+                                                <path
+                                                    d="M8.013 10.705a2.543 2.543 0 1 1 0-5.086 2.543 2.543 0 0 1 0 5.086zm0-6.46a3.917 3.917 0 1 0 0 7.835 3.917 3.917 0 0 0 0-7.835zM13 4.09a.915.915 0 1 1-1.83 0 .915.915 0 0 1 1.83 0"
+                                                    fill="currentColor" class="cr" />
+                                            </g>
+                                        </svg></a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
