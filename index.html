@@ -1,3 +1,7 @@
+<!-- this is the first website that i want to share as this is very similar to the original one with no toggle theme mode
+but highly responsive and eye pleasing  -->
+
+
 <!DOCTYPE html>
 <html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
@@ -24,269 +28,360 @@
 
 
     <style>
-        /*<![CDATA[*/
-        html>body {
-            line-height: normal;
-        }
-
-
-        ul.cr,
-        li.cr {
-            margin: 0;
-            padding: 0;
-        }
-
-        #content {
-            clear: both;
-            padding: 15px;
-        }
-
-        #global {
-            float: right;
-        }
-
-        #global ul,
-        #global li {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* MY CSS #HARISH */
-
-        /* body {
-            background-color: red;
-        } */
-
-
-        .responsive-table {
-            width: 100%;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* .login-options {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            width: 100%;
-            max-width: 700px;
-            margin: 0 auto;
-        } */
-        /* .login-options {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-        } */
-
-        .login-options {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 2rem;
-            align-items: stretch;
-        }
-
-        @media(max-width:768px) {
-            .login-options {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* .option {
-            flex: 1;
-        } */
-        /* .option {
-            flex: 1;
-            padding: 1.5rem;
-            border: 1px solid #ddd;
-            border-radius: 12px;
-            background: #fff;
-        } */
-        .option {
-            display: flex;
-            flex-direction: column;
-
-            padding: 1.5rem;
-
-            border: 1px solid #d9d9d9;
-            border-radius: 12px;
-
-            min-height: 180px;
-
-            background: #fff;
-        }
-
-        @media (max-width:768px) {
-            .option {
-                width: 100%;
-            }
-        }
-
-        /* Mobile */
-        @media (max-width: 768px) {
-            .login-options {
-                flex-direction: column;
-            }
-        }
-
-        /* .page-container {
-            width: 90%;
-            max-width: 1200px;
-            margin: 0 auto;
-        } */
-        .page-container {
-            width: min(90%, 1200px);
-            margin: auto;
-            padding-inline: 1rem;
-        }
-
-        /* svg {
-            max-width: 100%;
-            height: auto;
-        } */
-
-
-        @media (max-width: 768px) {
-            .c_site-nav__links {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .c_site-nav__link-item {
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-        * {
-            box-sizing: border-box;
-        }
-
-        img,
-        svg {
-            max-width: 100%;
-            height: auto;
-        }
-
-        body {
-            overflow-x: hidden;
-        }
-
-        /* .c_site-nav__link,
-.c_site-nav__more-link {
-    font-size: clamp(0.8rem, 1.2vw, 1rem);
-    white-space: nowrap;
-    transition: font-size 0.3s ease;
-} */
-
-        .c_site-nav__link,
-        .c_site-nav__more-link {
-            white-space: normal;
-            text-align: center;
-        }
-
-        h1 {
-            font-size: clamp(1.5rem, 4vw, 3rem);
-        }
-
-        h2 {
-            font-size: clamp(1.1rem, 2vw, 1.8rem);
-        }
-
-        .c_site-footer__nav-mod,
-        .c_site-footer__utility-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        @media(max-width:768px) {
-
-            .c_site-footer__nav-mod,
-            .c_site-footer__utility-list {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-
-
-        /* a,
-        button {
-            min-height: 44px;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        } */
-        .option a,
-        .option button {
-            min-height: 44px;
-        }
-
-        .c_site-nav__width {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 1rem;
-            flex-wrap: nowrap;
-        }
-
-        .c_site-nav__logo-link {
-            flex-shrink: 1;
-            min-width: 0;
-        }
-
-        .c_mit-logo {
-            width: clamp(120px, 30vw, 180px);
-            height: auto;
-        }
-
-        @media (max-width: 400px) {
-            .c_mit-logo {
-                width: 110px;
-            }
-        }
-
-        .login-btn {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-
-            padding: 12px 24px;
-
-            /* background: #a31f34; */
-            background: rgb(117 0 20);
-            color: white;
-            text-decoration: none;
-
-            border-radius: 6px;
-
-            margin: 1rem 0;
-            font-weight: 600;
-        }
-
-        .login-btn:hover {
-            background: #8b1a2d;
-        }
-
-        html,
-body {
-    height: 100%;
-    margin: 0;
+     /* ==========================================================================
+   1. CORE RESET & BASE STYLES (GAP FIX ENFORCED)
+   ========================================================================== */
+* {
+    box-sizing: border-box;
 }
 
+/* CRITICAL GAP FIX: Explicitly wiping out any margin/padding at the root level */
+html,
+body {
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+body {
+    overflow-x: hidden;
+    line-height: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: -0.02em;
+}
+
+ul.cr,
+li.cr {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Page Layout: Sticky Footer Setup */
 #page {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    margin-top: 0 !important; /* Forces layout to start at pixel 0 */
+    padding-top: 0 !important;
+}
+
+.c_front {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
 .c_primary-container {
-    flex: 1;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 
+#content {
+    clear: both;
+    padding: 20px 15px;
+    width: min(90%, 1200px);
+    margin: 0 auto auto auto; 
+    flex: 1 0 auto;
+}
 
-        /*]]>*/
+/* ==========================================================================
+   2. HEADER & NAVIGATION STYLES
+   ========================================================================== */
+.c_site-nav {
+    position: sticky;
+    top: 0 !important; /* Clings directly to the absolute top edge of the viewport */
+    margin-top: 0 !important; /* Defends against structural pushdowns */
+    z-index: 1000;
+    background-color: rgb(117, 0, 20) !important; /* MIT Maroon */
+    border-bottom: 1px solid #8a1a2d;
+}
+
+.c_site-nav__width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px 80px 10px 20px;
+}
+
+.c_site-nav__logo-link {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.c_mit-logo {
+    width: clamp(110px, 15vw, 160px);
+    height: auto;
+}
+
+/* Force standard header branding SVGs to white */
+.c_site-nav .c_logo-color--primary,
+.c_site-nav .c_logo-color--secondary {
+    fill: #FFFFFF !important;
+}
+
+.c_site-nav__links {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.c_site-nav__link-item {
+    flex-shrink: 0;
+}
+
+/* Specific selectors combining parent layout chains + !important to keep link text white */
+.c_site-nav .c_site-nav__link,
+.c_site-nav .c_site-nav__more-link,
+.c_site-nav .c_site-nav__links .c_site-nav__link,
+.c_site-nav__link-item .c_site-nav__link {
+    text-decoration: none !important;
+    color: #FFFFFF !important; 
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.c_site-nav .c_site-nav__link:hover,
+.c_site-nav .c_site-nav__more-link:hover,
+.c_site-nav .c_site-nav__links .c_site-nav__link:hover {
+    color: #f0d0d5 !important;
+}
+
+/* Hidden on normal laptops, shown on Tablet/Mobile */
+.c_site-nav__link-item--more {
+    display: none;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    transition: background 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   3. LOGIN OPTIONS CONTAINER
+   ========================================================================== */
+.login-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    align-items: stretch;
+    margin: 2rem 0;
+}
+
+.option {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 2rem;
+    border: 1px solid #d9d9d9;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.option:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    background: rgb(117, 0, 20);
+    color: white !important;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: auto;
+    font-weight: 600;
+    min-height: 44px;
+}
+
+/* ==========================================================================
+   4. UI ELEMENTS & FOOTER STYLES
+   ========================================================================== */
+.c_site-footer {
+    background: #f7f7f7;
+    padding: 30px 20px;
+    border-top: 1px solid #e5e5e5;
+}
+
+.c_site-footer__nav-mod,
+.c_site-footer__utility-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.c_site-footer__contact-info-link,
+.c_site-footer__nav__link {
+    border-bottom: none !important;
+    text-decoration: none !important;
+    color: #333333;
+}
+
+/* Custom Red Underline behavior for Utility Items */
+.c_site-footer__utility-list .c_site-footer__utility__text-link {
+    color: #333333;
+    text-decoration: none;
+    border-bottom: 2px solid rgb(117, 0, 20);
+    padding-bottom: 2px;
+    transition: color 0.2s ease;
+}
+
+.c_site-footer__utility-list .c_site-footer__utility__text-link:hover {
+    color: rgb(117, 0, 20);
+}
+
+/* ==========================================================================
+   5. RESPONSIVE BREAKPOINTS (PADS, TABLETS, & MOBILE FIXES)
+   ========================================================================== */
+
+/* Tablet & Medium Display Overrides (Max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    #page {
+        min-height: auto;
+    }
+
+    .c_front,
+    .c_primary-container,
+    #content {
+        flex: 0 0 auto;
+    }
+
+    #content {
+        margin-bottom: 2rem;
+    }
+
+    .login-options {
+        margin-bottom: 1.5rem;
+    }
+
+    .c_site-nav__width {
+        padding-right: 70px;
+    }
+
+    /* Hide trailing menu items to make space */
+    .c_site-nav__link-item:nth-child(4),
+    .c_site-nav__link-item:nth-child(5) {
+        display: none;
+    }
+
+    .c_site-nav__link-item--more {
+        display: inline-flex;
+    }
+}
+
+/* Mobile Devices (Max-width: 768px) */
+@media (max-width: 768px) {
+    .c_site-nav__width {
+        padding: 12px 60px 12px 15px;
+    }
+
+    .c_site-nav__links {
+        gap: 12px;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+
+    .c_site-nav__links::-webkit-scrollbar {
+        display: none;
+    }
+
+    .c_site-nav__link {
+        font-size: 0.85rem !important;
+    }
+
+    /* Stack login cards vertically */
+    .login-options {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+        margin: 1.5rem 0;
+    }
+
+    .c_site-footer {
+        padding: 25px 15px;
+    }
+
+    .c_site-footer__name,
+    .c_site-footer__contact-info {
+        text-align: center;
+        margin-bottom: 8px;
+        font-size: 0.9rem;
+    }
+
+    .c_site-footer__nav-mod,
+    .c_site-footer__utility-list {
+        display: flex !important;
+        flex-direction: row !important;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        align-items: center !important;
+        gap: 10px 16px !important;
+        padding: 0;
+        margin: 15px 0 0 0;
+        list-style: none;
+    }
+
+    .c_site-footer__nav-mod li,
+    .c_site-footer__utility-list li {
+        display: inline-block !important;
+        width: auto !important;
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    .c_site-footer__nav-mod a,
+    .c_site-footer__utility-list a {
+        font-size: 0.85rem;
+        white-space: nowrap;
+        display: inline-block;
+        min-height: unset !important;
+        padding: 4px 6px;
+    }
+}
+
     </style>
 
 
@@ -426,25 +521,26 @@ body {
                         <li class="c_site-nav__link-item cr"><a target="_blank" href="https://web.mit.edu/about"
                                 class="c_site-nav__link c_js-nav-item cr" data-drupal-link-system-path="node/16">About
                                 MIT</a></li>
-                        <li class="c_site-nav__link-item c_site-nav__link-item--more cr"><button
-                                class="c_site-nav__link cr">
-                                More <span class="c_site-nav__arrow cr">&#x2193;</span></button>
-                            <ul class="c_site-nav__more-list c_js-nav-more cr">
-                                <li class="c_site-nav__more-link-item cr"><a target="_blank"
-                                        href="https://web.mit.edu/admissions-aid" class="c_site-nav__more-link cr"
-                                        data-drupal-link-system-path="node/14">Admissions + Aid</a></li>
-                                <li class="c_site-nav__more-link-item cr"><a target="_blank"
-                                        href="https://web.mit.edu/campus-life" class="c_site-nav__more-link cr"
-                                        data-drupal-link-system-path="node/15">Campus Life</a></li>
-                                <li class="c_site-nav__more-link-item cr"><a target="_blank" href="http://news.mit.edu/"
-                                        class="c_site-nav__more-link cr">News</a></li>
-                                <li class="c_site-nav__more-link-item cr"><a target="_blank"
-                                        href="https://web.mit.edu/alumni" class="c_site-nav__more-link cr"
-                                        data-drupal-link-system-path="node/17">Alumni</a></li>
-                                <li class="c_site-nav__more-link-item cr"><a target="_blank"
-                                        href="https://web.mit.edu/about" class="c_site-nav__more-link cr"
-                                        data-drupal-link-system-path="node/16">About MIT</a></li>
-                            </ul>
+                        <li class="c_site-nav__link-item c_site-nav__link-item--more cr">
+                            <a href="#" class="c_site-nav__more-link cr">More ▾</a>
+                        </li>
+
+                        <ul class="c_site-nav__more-list c_js-nav-more cr">
+                            <li class="c_site-nav__more-link-item cr"><a target="_blank"
+                                    href="https://web.mit.edu/admissions-aid" class="c_site-nav__more-link cr"
+                                    data-drupal-link-system-path="node/14">Admissions + Aid</a></li>
+                            <li class="c_site-nav__more-link-item cr"><a target="_blank"
+                                    href="https://web.mit.edu/campus-life" class="c_site-nav__more-link cr"
+                                    data-drupal-link-system-path="node/15">Campus Life</a></li>
+                            <li class="c_site-nav__more-link-item cr"><a target="_blank" href="http://news.mit.edu/"
+                                    class="c_site-nav__more-link cr">News</a></li>
+                            <li class="c_site-nav__more-link-item cr"><a target="_blank"
+                                    href="https://web.mit.edu/alumni" class="c_site-nav__more-link cr"
+                                    data-drupal-link-system-path="node/17">Alumni</a></li>
+                            <li class="c_site-nav__more-link-item cr"><a target="_blank"
+                                    href="https://web.mit.edu/about" class="c_site-nav__more-link cr"
+                                    data-drupal-link-system-path="node/16">About MIT</a></li>
+                        </ul>
                         </li>
                     </ul>
                 </div>
@@ -460,38 +556,8 @@ body {
                         <h1>Application Management - Graduate Admissions</h1>
 
 
-                        <!-- <table class="fixed" role="none" style="width: 700px;"> -->
-                        <!-- <table class="fixed responsive-table" role="none">
-
-                            <colgroup>
-                                <col style="width: 50%;" />
-                                <col style="width: 50%;" />
-                            </colgroup>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <h2>Returning users:</h2><b><a
-                                                href="/account/login?r=https%3a%2f%2fapply.mit.edu%2fapply%2f">Log
-                                                in</a><span> to continue an application.</span></b>
-                                    </td>
-                                    <td>
-                                        <h2>First-time users:</h2><b><a
-                                                href="/account/register?r=https%3a%2f%2fapply.mit.edu%2fapply%2f"><span>Create
-                                                    an account</span></a><span> to start a new application.</span></b>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table> -->
-
 
                         <div class="login-options">
-                            <!-- <div class="option">
-                                <h2>Returning users:</h2>
-                                <b>
-                                    <a href="/account/login">Log in</a>
-                                    to continue an application.
-                                </b>
-                            </div> -->
 
                             <div class="option">
                                 <h2>Returning users</h2>
@@ -502,16 +568,6 @@ body {
 
                                 <p>Continue an existing application.</p>
                             </div>
-
-                            <!-- <div class="option">
-
-                                
-                                <h2>First-time users:</h2>
-                                <b>
-                                    <a href="/account/register">Create an account</a>
-                                    to start a new application.
-                                </b>
-                            </div> -->
 
                             <div class="option">
                                 <h2>First-time users</h2>
@@ -666,6 +722,7 @@ body {
             </footer>
         </div>
     </div>
+
 </body>
 
 </html>
