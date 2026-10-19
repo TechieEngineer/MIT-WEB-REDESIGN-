@@ -14,11 +14,20 @@ So yes, like one day i was just hovering through internet and i was there at MIT
 # After:
 <img width="948" height="437" alt="techieengineer github io_MIT-WEB-REDESIGN-Laptop 90 zoom" src="https://github.com/user-attachments/assets/3e96a4d6-0b4f-4f15-bab5-5c86f3a135bb" />
 
-
-# Mobile version
-<div align="center">
+<details>
+  <summary>📱 Click to view Mobile Preview</summary>
+  <br>
   
-  <!-- First half of the mobile page -->
-  <img src="https://github.com/user-attachments/assets/f4cc6fe2-fdb9-4044-827b-8e38da8e4797" width="320" alt="Mobile View Part 1">
+  <!-- Phone Frame Container -->
+  <div align="center">
+    <table border="0" style="border-collapse: collapse; border: none;">
+      <tr>
+        <td style="background: url('https://githubusercontent.com') no-repeat center; background-size: contain; padding: 60px 25px 80px 25px; width: 300px; height: 600px; text-align: center; vertical-align: middle;">
+          <!-- Replace the URL below with your own mobile screenshot -->
+          <img src="https://github.com/user-attachments/assets/f4cc6fe2-fdb9-4044-827b-8e38da8e4797" width="250" alt="Mobile App Screenshot" />
+        </td>
+      </tr>
+    </table>
+  </div>
+</details>
 
-</div>
