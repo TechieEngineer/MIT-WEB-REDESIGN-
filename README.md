@@ -20,5 +20,15 @@ So yes, like one day i was just hovering through internet and i was there at MIT
 
 
 #test
-<img src="./images/Screenshot 2026-06-03 134300.png" width="250" alt="Mobile Version" />
+<div align="center">
+  
+  <!-- First half of the mobile page -->
+  <img src="https://github.com/user-attachments/assets/17865dfc-9d8c-4d09-a195-c4476170c3fe" width="320" alt="Mobile View Part 1">
+  
+  <!-- This break tag forces the next image to go underneath instead of side-by-side -->
+  <br> 
+  
+  <!-- Second half of the mobile page -->
+  <img src="https://github.com/user-attachments/assets/ee36efad-b8d4-4d6e-afc5-e6eac0a92b15" width="320" alt="Mobile View Part 2">
 
+</div>
