@@ -19,3 +19,6 @@ So yes, like one day i was just hovering through internet and i was there at MIT
 <img width="382" height="655" alt="Screenshot 2026-06-03 134314" src="https://github.com/user-attachments/assets/ee36efad-b8d4-4d6e-afc5-e6eac0a92b15" />
 
 
+#test
+<img src="./images/Screenshot 2026-06-03 134300.png" width="250" alt="Mobile Version">
+
