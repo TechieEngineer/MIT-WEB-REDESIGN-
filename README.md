@@ -20,5 +20,5 @@ So yes, like one day i was just hovering through internet and i was there at MIT
 
 
 #test
-<img src="./images/Screenshot 2026-06-03 134300.png" width="250" alt="Mobile Version">
+<img src="./images/Screenshot 2026-06-03 134300.png" width="250" alt="Mobile Version" />
 
