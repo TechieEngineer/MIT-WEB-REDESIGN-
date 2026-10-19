@@ -12,23 +12,13 @@ So yes, like one day i was just hovering through internet and i was there at MIT
 <img width="1687" height="886" alt="currently origianl website" src="https://github.com/user-attachments/assets/7c2131c0-49e5-4481-b0c5-1696d21c6593" />
 
 # After:
-<img width="1847" height="870" alt="MIT website with original like content but very optimitized and highly responsive" src="https://github.com/user-attachments/assets/c9b85bc7-8d2f-4ca3-8a9c-56c2c0e17a56" />
+<img width="948" height="437" alt="techieengineer github io_MIT-WEB-REDESIGN-Laptop 90 zoom" src="https://github.com/user-attachments/assets/3e96a4d6-0b4f-4f15-bab5-5c86f3a135bb" />
+
 
 # Mobile version
-<img width="414" height="763" alt="Screenshot 2026-06-03 134300" src="https://github.com/user-attachments/assets/17865dfc-9d8c-4d09-a195-c4476170c3fe" />
-<img width="382" height="655" alt="Screenshot 2026-06-03 134314" src="https://github.com/user-attachments/assets/ee36efad-b8d4-4d6e-afc5-e6eac0a92b15" />
-
-
-#test
 <div align="center">
   
   <!-- First half of the mobile page -->
-  <img src="https://github.com/user-attachments/assets/17865dfc-9d8c-4d09-a195-c4476170c3fe" width="320" alt="Mobile View Part 1">
-  
-  <!-- This break tag forces the next image to go underneath instead of side-by-side -->
-  <br> 
-  
-  <!-- Second half of the mobile page -->
-  <img src="https://github.com/user-attachments/assets/ee36efad-b8d4-4d6e-afc5-e6eac0a92b15" width="320" alt="Mobile View Part 2">
+  <img src="https://github.com/user-attachments/assets/f4cc6fe2-fdb9-4044-827b-8e38da8e4797" width="320" alt="Mobile View Part 1">
 
 </div>
