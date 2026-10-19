@@ -13,7 +13,8 @@ So yes, like one day i was just hovering through internet and i was there at MIT
 
 # After:
 <img width="948" height="437" alt="techieengineer github io_MIT-WEB-REDESIGN-Laptop 90 zoom" src="https://github.com/user-attachments/assets/3e96a4d6-0b4f-4f15-bab5-5c86f3a135bb" />
-
+<br>
+<br>
 <details>
   <summary>📱 Click to view Mobile Preview</summary>
   <br>
