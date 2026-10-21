@@ -19,6 +19,11 @@ So yes, like one day i was just hovering through internet and i was there at MIT
 
 # After:
 <img width="948" height="437" alt="techieengineer github io_MIT-WEB-REDESIGN-Laptop 90 zoom" src="https://github.com/user-attachments/assets/3e96a4d6-0b4f-4f15-bab5-5c86f3a135bb" />
+
+# Dark theme : https://techieengineer.github.io/MIT-WEB-REDESIGN-/dark/
+<img width="946" height="436" alt="Screenshot 2026-10-21 234222" src="https://github.com/user-attachments/assets/ec827454-825f-482a-9c89-0db0fbab8ede" />
+
+
 <br>
 <br>
 <details>
