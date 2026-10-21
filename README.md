@@ -22,6 +22,7 @@ So yes, like one day i was just hovering through internet and i was there at MIT
 
 # Dark theme :
 https://techieengineer.github.io/MIT-WEB-REDESIGN-/dark/
+<br>
 <img width="946" height="436" alt="Screenshot 2026-10-21 234222" src="https://github.com/user-attachments/assets/ec827454-825f-482a-9c89-0db0fbab8ede" />
 
 
