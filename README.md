@@ -8,6 +8,12 @@ This is an independent unsolicited UI/UX redesign concept created for educationa
 
 So yes, like one day i was just hovering through internet and i was there at MIT's ( Masachuttes Institute of Techonology ) admission management page and i just saw basic html and nothing so i just redesign it, if you reading this now till date it's not been update though i had mailed the mit but sadly no response ( https://apply.mit.edu/apply/ ) if you want you can check the now 
 
+## 🚀 Live Demos
+
+*   [Standard Redesign (Light Theme Only)](https://techieengineer.github.io/MIT-WEB-REDESIGN-/) – A clean, lightweight concept focusing on basic user flows.
+*   [Feature-Packed Version (with Dark Mode)](https://techieengineer.github.io/MIT-WEB-REDESIGN-/dark/ – An advanced version featuring a dedicated theme toggle.
+
+
 # Before: 
 <img width="1687" height="886" alt="currently origianl website" src="https://github.com/user-attachments/assets/7c2131c0-49e5-4481-b0c5-1696d21c6593" />
 
